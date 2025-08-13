@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #181c24;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+#main-menu {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #23283a;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px #0008;
+    padding: 32px 24px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+#menu-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+button {
+    background: #3a8fff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 4px 0;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #2566c7;
+}
+form > div {
+    margin-bottom: 14px;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #23283a;
+    color: #fff;
+}
+select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #23283a;
+    color: #fff;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.98em;
+}
+#room-form {
+    margin-top: 16px;
+}
+#waiting-room {
+    max-width: 420px;
+    margin: 60px auto;
+    background: #23283a;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px #0008;
+    padding: 32px 24px;
+    text-align: center;
+}
+#waiting-room h2 {
+    margin-bottom: 12px;
+    font-size: 1.5em;
+}
+#waiting-room .loader {
+    margin: 18px auto 18px auto;
+    border: 6px solid #3a8fff;
+    border-top: 6px solid #23283a;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#waiting-room ul#user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+#waiting-room ul#user-list li {
+    background: #2d3350;
+    margin: 4px 0;
+    padding: 6px 0;
+    border-radius: 6px;
+    font-size: 1.08em;
+}
+#waiting-room .tip {
+    margin-top: 18px;
+    font-style: italic;
+    color: #a3c9ff;
+    background: #1a233a;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.05em;
+}
